@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+body {
+    font-family: sans-serif;
+    .header {
+        background: rgb(28, 27, 27);
+        color: white;
+        .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .info-1 {
+                img {
+                   width: 180px; 
+                }
+            }
+            .info-2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2px;
+                h3 {
+                    display: flex;
+                }
+                svg {
+                    fill: white;
+                }
+            }
+            .info-3 {
+                display: flex;
+                align-items: center;
+                padding: 10px !important;
+                // background: white;
+                .select-3 {
+                    background: rgb(224, 217, 217);
+                    padding: 5px;
+                    border-radius: 6px 0 0 6px ;
+                    select {
+                        outline: none;
+                        border: none;
+                    }
+                }
+                .input-3 {
+                    background: white;
+                    padding: 9.2px;
+                    width: 500px;
+                    display: flex;
+                    align-items: center;
+                    padding: 9.9px;
+                    gap: 300px;
+                    input {
+                        outline: none;
+                        border: none;
+                        background: white;
+                    }
+                }
+                .img-3 {
+                    background: hwb(51 2% 5%);
+                    padding: 4.4px;
+                    border-radius: 0 6px 6px 0;
+                    input {
+                        
+                    }
+                }
+            }
+            .info-4 {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                img {
+                    width: 30px;
+                    height: 20px;
+                }
+                select {
+                    background: rgb(28, 27, 27);
+                    color: white;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .info-5 {
+                select {
+                    background: rgb(28, 27, 27);
+                    color: white;
+                    border: none;
+                    outline: none;
+                    font-family: 25px;
+                }
+            }
+            .info-6 {
+                p {
+                    display: flex;
+                }
+            }
+            .info-7 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: 50px;
+                    height: 35px;
+                }
+            }
+        }
+
+        .header-2 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-left: -65px;
+            gap: 20px;
+            .menu {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                border: none;
+                background: transparent;
+                cursor: pointer;
+                svg {
+                    fill: white;
+                }
+            }
+        }
+    }
+
+    main {
+        max-width: 350px;
+        background: red;
+    }
+}
+
+.header-3 {
+    display: none ;
+    padding: 20px;
+    transform: translateX(-350px);
+    transition: all 0.3s ease-in;
+    position: absolute;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background: #ff0000;
+    height: 100vh;
+}
+
+// GS
+.show{
+    display: block;
+    transform: translateX(0);
+}
+
+.inner__box{
+    position: relative;
+}
+
+.close-button{
+    position: absolute;
+    right: -27%;
+    top: -15%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.bg_blur{
+    max-width: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: fixed;
+    inset: 0;
+}
