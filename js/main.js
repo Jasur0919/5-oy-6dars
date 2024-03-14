@@ -21,3 +21,26 @@ closeBtn.addEventListener('click', ()=> {
     bgBlur.classList.remove('bg_blur'); 
 })
 
+
+
+///////////////////////////
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navLocation = document.querySelector(".info-2");
+    const singup = document.querySelector(".singup");
+    const doneBtn = document.querySelector(".done-btn");
+  
+    navLocation.addEventListener("click", function() {
+      singup.style.display = "block"; 
+    });
+  
+    doneBtn.addEventListener("click", function() {
+      singup.style.display = "none"; 
+    });
+  });
+
+
+
+
+
+
