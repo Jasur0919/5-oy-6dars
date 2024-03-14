@@ -304,6 +304,13 @@ body {
   margin-left: -20px;
 }
 
+.zip-code .span {
+  border: 1px solid red;
+  width: 20px;
+  margin-left: 50px;
+  display: none;
+}
+
 .show {
   display: block;
   transform: translateX(0);
